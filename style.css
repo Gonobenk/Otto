@@ -95,7 +95,7 @@
 .main-intro {
   text-align: center;
   padding-top: 2rem;
-  height: 31.25rem;
+  height: 21.25rem;
   grid-area: main-intro;
 }
 .main-header {
@@ -107,7 +107,7 @@
     font-size: 2rem;
   }
   .main-intro {
-    height: 21.25rem;
+    height: 15.25rem;
   }
   .otto-face {
     height: 200%;
@@ -118,7 +118,7 @@
     font-size: 1.5rem;
   }
   .main-intro {
-    height: 11.25rem;
+    height: 15.25rem;
   }
   .otto-face {
     height: 200%;
