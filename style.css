@@ -79,7 +79,6 @@
     display: inline-block;
     padding: 0.25rem 0.75rem 0.3rem;
   }
-
   .navbar-nav {
     position: static;
     flex-direction: column;
@@ -88,9 +87,6 @@
   }
   .navbar-nav.open {
     display: block;
-  }
-  .main-header {
-    font-size: 2rem;
   }
 }
 
@@ -101,12 +97,33 @@
   padding-top: 2rem;
   height: 31.25rem;
   grid-area: main-intro;
-  overflow:hidden;
 }
 .main-header {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 500px) {
+  .main-header {
+    font-size: 2rem;
+  }
+  .main-intro {
+    height: 21.25rem;
+  }
+  .otto-face {
+    height: 200%;
+  }
+}
+@media screen and (max-width: 374px) {
+  .main-header {
+    font-size: 1.5rem;
+  }
+  .main-intro {
+    height: 11.25rem;
+  }
+  .otto-face {
+    height: 200%;
+  }
+}
 .main-otto {
   overflow: hidden;
   grid-area: main-otto;
