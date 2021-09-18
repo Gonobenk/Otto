@@ -100,7 +100,7 @@
   grid-area: main-intro;
 }
 .main-header {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .main-otto {
@@ -179,7 +179,7 @@
   grid-area: testimonial;
 }
 .testimonial-text {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.5;
   margin: 16px;
 }
@@ -188,8 +188,8 @@
   opacity: 85%;
   object-fit: cover;
   border-radius: 100%;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
 }
 
 .carousel-btn {
