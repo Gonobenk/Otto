@@ -168,7 +168,6 @@
   display: grid;
   grid-area: features;
   text-align: center;
-
   padding: 5% 0;
 }
 
@@ -183,14 +182,20 @@
   grid-area: feature-3;
 }
 
+.feature-title {
+  line-height: 2rem;
+}
 .fa-leaf {
+  margin-bottom: 2%;
   color: rgb(231, 238, 149);
 }
 .fa-fish {
+  margin-bottom: 2%;
   color: rgb(231, 238, 149);
 }
 
 .fa-lemon {
+  margin-bottom: 2%;
   color: rgb(231, 238, 149);
 }
 /* Testimonial section */
