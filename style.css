@@ -1,0 +1,213 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Monda&family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Rubik&display=swap");
+/* universal selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: max-content;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "main-intro main-intro main-otto main-otto"
+    "divider divider divider divider"
+    "features features features features"
+    "divider1 divider1 divider1 divider1"
+    "testimonial testimonial testimonial testimonial"
+    "footer footer footer footer";
+  padding: 0.5rem 1rem;
+  height: 100vh;
+}
+
+/* Navigation bar */
+
+.navbar {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.849);
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: navbar;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.navbar-brand {
+  color: rgb(70, 67, 67);
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: auto !important;
+}
+
+.nav-link {
+  color: rgb(70, 67, 67);
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 2rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-bottom: 2.5px rgb(90, 90, 89) solid;
+}
+
+@media screen and (max-width: 700px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+  .hamburger {
+    display: inline-block;
+    padding: 0.25rem 0.75rem 0.3rem;
+  }
+
+  .navbar-nav {
+    position: static;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+  .navbar-nav.open {
+    display: block;
+  }
+}
+
+/* Title section */
+
+.main-intro {
+  text-align: center;
+  padding-top: 2rem;
+  height: 500px;
+  grid-area: main-intro;
+}
+.main-header {
+  font-size: 3rem;
+}
+
+.main-otto {
+  overflow: hidden;
+  grid-area: main-otto;
+}
+
+.otto-face {
+  opacity: 85%;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 250%;
+  min-height: 200%;
+}
+
+/* divider */
+.divider {
+  letter-spacing: 12px;
+  width: 100%;
+  text-align: center;
+  overflow: visible;
+  font-size: 34px;
+  border: 0;
+  color: white;
+  margin: 6% 0;
+  grid-area: divider;
+}
+
+.divider:after {
+  content: "\B7\B7\B7";
+  color: rgba(0, 0, 0, 0.54);
+  top: -18px;
+}
+
+.divider1 {
+  grid-area: divider1;
+}
+
+/* Features section */
+.features {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "feature-1 feature-2 feature-3";
+  display: grid;
+  grid-area: features;
+  text-align: center;
+
+  padding: 5% 0;
+}
+
+.feature-1 {
+  grid-area: feature-1;
+}
+
+.feature-2 {
+  grid-area: feature-2;
+}
+.feature-3 {
+  grid-area: feature-3;
+}
+
+.fa-leaf {
+  color: rgb(231, 238, 149);
+}
+.fa-fish {
+  color: rgb(231, 238, 149);
+}
+
+.fa-lemon {
+  color: rgb(231, 238, 149);
+}
+/* Testimonial section */
+
+.testimonial {
+  text-align: center;
+  grid-area: testimonial;
+}
+.testimonial-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin: 16px;
+}
+.testimonials-img {
+  margin: 2% 0%;
+  opacity: 85%;
+  object-fit: cover;
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.carousel-btn {
+  color: #333;
+  filter: invert(1);
+}
+
+.footer {
+  margin-top: 10%;
+  color: rgb(151, 148, 135);
+  text-align: center;
+  grid-area: footer;
+}
+.social-media-img {
+  padding: 2% 0%;
+}
+
+.social-media-icon {
+  color: black;
+  padding: 0 1%;
+}
