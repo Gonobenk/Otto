@@ -100,7 +100,7 @@
   grid-area: main-intro;
 }
 .main-header {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .main-otto {
@@ -179,7 +179,7 @@
   grid-area: testimonial;
 }
 .testimonial-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   margin: 16px;
 }
