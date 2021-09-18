@@ -89,6 +89,9 @@
   .navbar-nav.open {
     display: block;
   }
+  .main-header {
+    font-size: 2rem;
+  }
 }
 
 /* Title section */
